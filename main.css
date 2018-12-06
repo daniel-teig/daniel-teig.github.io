@@ -1,248 +1,84 @@
-html, body{
-    height: 100%;
+*{
     padding: 0;
     margin: 0;
-}
-header{
-    background-color: rgb(94, 94, 94);
-}
-
-* {
-    text-decoration: none;
-    
+    font-family: 'Futura';
+    color: white;
 }
 
 #container{
-    min-height: calc(100% - 220px);
+    min-height: 80vh;
+    width: 100%;
+    background-image: url('img/Header.png');
+    display: flex;
+    align-items: center;
 }
 
-#main{
-    overflow: auto;
-    padding-bottom: 100px;
+#center{
+    display: block;
+    max-width: 900px;
+    margin: 0 auto;
+}
+#left{
+    text-align: center;
+    font-size: 80px;
+}
+
+#left h5{
+    font-size: 20px;
+}
+
+#right{
+    text-align: center;
+    font-size: 80px;
 }
 
 #footer{
-    background-color: rgb(41, 41, 41);
-    position: relative;
-    height: 100px;
-}
-
-a {
-    color: rgb(184, 74, 74)
-}
-
-p, li, h4, strong, h2, h1, h3 {
-    font-family: 'Catamaran', sans-serif;
-    color: #111;
-    padding-left: 20px;
-    padding-right: 20px;
-
-}
-
-
-/* HEADER NAV BAR */
-header {
-    background-color:  #fff;
+    min-height: 20vh;
     width: 100%;
-    height: 120px;
-    padding: 0;
-}
-
-header .header-logo {
-    display: block;
-    background-image: url('img/WebsiteLogo.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 50px;
-    width: 50px;
-    margin: 0px auto;
-    padding: 0;
-}
-
-header nav{
-    padding: 0;
-    margin: 0;
-}
-
-header nav ul {
-    display: block;
-    padding: 0;
-    width: fit-content;
-    margin: 0 auto;
-}
-
-header nav ul li {
-    display: inline-block;
-    list-style: none;
-    padding: 0 16px;
-    margin: 0 auto;
+    background-color: rgb(31, 31, 37);
 }
 
 
-header nav ul li a {
-    font-size: 16px;
-    font-weight: 400;
-    text-transform: uppercase;
-    text-align: center;
-    font-family: 'Catamaran', sans-serif;
-    color: #111;
-    line-height: 50px;
-
-}
 
 
-/* HEADER IMAGE BANNER */
 
-
-.contentContainer {
-    margin: 20px auto;
-    display: block;
-    background-color: white;
-}
-
-.image-banner {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    height: 150px;
-    background-image: url('img/Header.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    align-items: top;
-    text-align: center;
-}
-
-.image-banner h1 {
-    font-size: 20px;
-    font-weight: 200;
-    text-transform: uppercase;
-    text-align: center;
-    vertical-align: center;
-    line-height: 150px;
-    font-family: 'Catamaran', sans-serif;
-    color: rgb(255, 255, 255);
-    
-}
-
-
-.welcome-text {
-    font-size: 16px;
-    font-weight: 100;
-    padding: 0px 0px 100px 0px;
-    font-family: 'Catamaran', sans-serif;
-    color: rgb(58, 58, 58);
-    line-height: 25px;
-}
-
-.welcome-text h2{
-    font-size: 20px;
-    font-weight: 600;
-    font-family: 'Catamaran', sans-serif;
-    color: rgb(58, 58, 58);
-    line-height: 25px;
-}
-
-
-footer .footerContainer {
-    width: 100%;
-    height: 100px;
-    margin: 0 auto;
-    max-height: 100px;
-    max-width: 100%;
-    overflow: hidden;
-}
-
-footer ul {
-    display: block;
-    width: 100%;
-    margin: 0 auto;
-    max-height: 100px;
-    max-width: 100%;
-}
-
-footer ul li {
-    list-style: none;
-    padding: 0 5px;
-    margin: 0 auto;
-}
-
-
-footer ul li a {
-    font-size: 16px;
-    font-weight: 600;
-    text-transform: uppercase;
-    text-align: center;
-    font-family: 'Catamaran', sans-serif;
+.cbutton{
+    border: 2px solid white;
     color: white;
-    line-height: 50px;
-    max-width: 100%;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+    font-size: 16px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    background-color: rgba(0, 0, 0, 0); 
 }
 
-.footer-buttons {
-    height: 100px;
-    width: 50px;
-    float: right;
-    padding: 30px 40px 0 0;
-    
+.cbutton a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
 }
 
-.footer-buttons a img{
-    padding: 0 20px 20px 0;
-    border-radius: 25px;
-   
+.cbutton:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(54, 54, 54);
+    cursor: pointer;
+    padding: 20px 43px;
 }
 
+.cbutton:hover a{
+    color: rgb(54, 54, 54);
+}
 
-@media only screen and (min-width: 750px) {
-    main {
-        font-size: 20px;
-    }
-
-    .contentContainer{
-        max-width: 900px;
-    }
-    
-    .welcome-text {
-        max-width: 900px;
-        margin: 0 auto;
-    }
-
-    header .header-logo {
-        margin: 5px 20px;
-        height: 40px;
-        width: 40px;
-        float: left;
-    }
-    .image-banner h1 {
-        font-size: 50px;
-    }
-
-    header nav ul {
-        margin: 0;
-        float: left;
-    }
-
-    header {
-        border-bottom-style: solid;
-        border-bottom-color: rgb(230, 230, 230);
-        border-bottom-width: 1px;
-        height: 50px;
-        
-    }
-
-    header nav {
-        margin: 0 auto;
-        max-width: 1000px;
-    }
-
-    #container{
-        min-height: calc(100% - 50px);
-    }
-
-    footer .footerContainer {
-        max-width: 1000px;
-        margin: 0 auto;
-    }
+#footerContainer *{
+    font-family: 'Catamaran', sans-serif;
+    color: rgb(176, 174, 182);
+    padding-bottom: 10px;
+}
+#footerContainer{
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 900px;
 }
