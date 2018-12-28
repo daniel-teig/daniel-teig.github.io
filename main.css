@@ -38,9 +38,21 @@
     background-color: rgb(31, 31, 37);
 }
 
+#donateBTN{
+    border: 2px solid rgb(39, 168, 255);
+    color: white;
+}
 
 
+#donateBTN a{
+    color: rgb(39, 168, 255);
+}
 
+#donateBTN:hover{
+    background-color: rgb(39, 168, 255);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
 
 .cbutton{
     border: 2px solid white;
@@ -60,6 +72,8 @@
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
+
+
 
 .cbutton:hover{
     background-color: rgb(255, 255, 255);
